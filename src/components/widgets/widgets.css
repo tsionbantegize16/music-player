@@ -1,0 +1,99 @@
+/* widgets.css */
+.widgets-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(30, 42, 62);  /* Dark background for the body */
+}
+
+.widget-container {
+    display: flex;
+    justify-content: space-between;  /* Distribute sections evenly */
+    gap: 20px;  /* Space between each section */
+}
+
+.widget-section {
+    background-color: rgb(59, 62, 67);  /* Background for each widget */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+    width: 30%;  /* Set width for each section to fit in the row */
+}
+
+.widget-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;  /* Light text color for titles */
+}
+
+/* Display items horizontally */
+.widget-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.widget-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #4a4a4a; /* Darker background for items */
+    border-radius: 6px;
+    padding: 8px;
+    width: 100px;  /* Limit size of each item */
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget-item img {
+    width: 40px;  /* Reduced size for icons */
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.widget-item p {
+    font-size: 0.85rem;  /* Smaller text size */
+    margin: 0;
+    color: #fff;  /* White text for clarity */
+}
+
+/* Hover effect for widget items */
+.widget-item:hover {
+    background-color: rgb(42, 147, 147);
+    color: #333;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .widgets-body {
+        padding: 10px;
+    }
+
+    .widget-section {
+        padding: 10px;
+        width: 100%;  /* Stack sections vertically on smaller screens */
+    }
+
+    .widget-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Stacking items vertically on smaller screens */
+    .widget-items {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .widget-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

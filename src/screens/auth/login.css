@@ -1,0 +1,54 @@
+.login-page {
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 20%; /* Reduced to make it more proportional */
+    max-width: 150px; /* Ensures it doesn't get too large on wide screens */
+    margin-bottom: 30px; /* Adds spacing between the logo and the login button */
+}
+
+.login-button {
+    width: 250px; /* Fixed width to maintain consistency */
+    padding: 15px 30px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 50px;
+    color: #1E2A3E;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #1E2A3E;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-page {
+        width: 90vw; /* Make it responsive on smaller screens */
+    }
+
+    .logo {
+        width: 40%; /* Resize logo for smaller screens */
+    }
+
+    .login-button {
+        width: 200px; /* Adjust button size for smaller screens */
+        font-size: 1rem;
+    }
+}

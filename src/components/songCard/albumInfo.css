@@ -1,0 +1,59 @@
+/* Album Info Card Styling */
+.album-info-card {
+    margin-top: 5px;
+    padding: 2px;
+    position: relative; /* Adjusted to prevent overlap */
+    width: 100%; /* Full width within SongCard */
+    background-color: #1E2A3E; /* Match the SongCard background */
+    border-radius: 15px;
+    color: white;
+  }
+  
+  /* Marquee for scrolling album name */
+  .albumName-container {
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px; /* Adjusted for better readability */
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Adjusted animation speed */
+    padding-left: 100%;
+  }
+  
+  /* Album info styling */
+  .album-info {
+    font-size: 13px; /* Slightly larger for better readability */
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 2px;
+    color: antiquewhite; /* Softer text color */
+  }
+  
+  /* Album release date styling */
+  .album-release {
+    font-size: 12px; /* Adjusted size */
+    font-weight: 400;
+    color: #B0B0B0; /* Lighter text for the release date */
+    margin-top: 2px; /* Spacing for better separation */
+  }
+  
+  /* Marquee animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

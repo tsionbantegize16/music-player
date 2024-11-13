@@ -1,0 +1,35 @@
+.albumImage-container {
+    width: 80%;
+    margin-bottom: 1px; /* Minimize space between image and info */
+    display: flex;
+    flex-direction: column; /* Stack image and info vertically */
+    align-items: center; /* Center the image horizontally */
+    justify-content: center;
+    position: relative;
+    margin: 0 auto; /* Ensure it is centered */
+  }
+  
+  .albumImage {
+    position: relative;
+    width: 80%; /* Adjust image width */
+  }
+  
+  .albumImage img {
+    border-radius: 15px;
+    width: 100%; /* Ensure image takes full width of container */
+    aspect-ratio: 1; /* Maintain square ratio */
+    display: block; /* Block element to avoid spacing issues */
+  }
+  
+  /* Minimal shadow effect behind the album image */
+  .albumImage-shadow {
+    position: absolute;
+    width: 85%; /* Slightly smaller than the image */
+    height: 100%; /* Match the height of the image */
+    top: 15px; /* Adjust position slightly below the image */
+    left: 7.5%;
+    border-radius: 20px;
+    background-color: rgba(244, 240, 240, 0.991); /* Transparent shadow */
+    z-index: -1;
+  }
+  

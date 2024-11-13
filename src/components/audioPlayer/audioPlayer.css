@@ -1,0 +1,86 @@
+.player-body {
+    width: 100%;
+    height: 44%;
+    margin: 3% 0%;
+    display: flex; /* Flexbox layout for horizontal alignment */
+}
+
+.player-left-body {
+    width: 37%;
+    display: flex;
+    justify-content: center; /* Center the circle */
+    align-items: center; /* Center the circle */
+}
+
+.player-right-body {
+    width: 63%;
+    display: flex; /* Flexbox layout for parallel alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative; /* Allows for absolute positioning of inner elements */
+}
+
+.song-details {
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-direction: column; /* Stack song title and artist vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.song-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0px;
+    color: aliceblue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.song-artist{
+    color: aqua;
+    font-size: 20px;
+    font-weight: 500;
+}
+.player-right-bottom {
+    align-items: center; /* Center items */
+    width: 100%; /* Take full width */
+    flex-direction: column; /* Stack items vertically */
+    display: flex; /* Use flexbox for layout */
+}
+.song-duration{
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.duration{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.duration {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.play-pause-btn {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #fff; /* White icon color */
+    font-size: 30px; /* Size of the icon */
+    margin: 10px 0; /* Margin for spacing */
+    transition: transform 0.3s; /* Smooth scale effect on hover */
+}
+
+.play-pause-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}

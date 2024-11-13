@@ -1,0 +1,14 @@
+.songCard-body {
+    width: 70%;
+    height: auto; 
+    margin-left: 29%;
+    background-color: #1E2A3E;
+    border-radius: 30px;
+    padding: 10px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    flex-direction: column; /* Stack image and info vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  

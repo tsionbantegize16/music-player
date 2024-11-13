@@ -1,0 +1,93 @@
+/* Screen container for the library */
+.screen-container {
+    display: flex;
+    justify-content: center; /* Center the library body */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background-color: #1E2A3E; /* Background for the container */
+    min-height: 100vh; /* Full height for the screen */
+    color: white; /* Text color */
+}
+
+/* Library body for horizontal listing */
+.library-body {
+    width: 94%; /* Full width inside the main body */
+    height: 90%;
+    padding: 3%;
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    overflow-y: auto; /* Enable vertical scrolling */
+    justify-content: space-between; /* Space between playlist cards */
+}
+
+/* Each playlist card */
+.playlist-card {
+    width: 15%; /* Set proportional width for the cards */
+    height: 200px; /* Fixed height for consistency */
+    border-radius: 20px;
+    background-color: rgb(30, 42, 62);
+    border: 1px solid rgba(54, 69, 98, 0.18);
+    padding: 10px; /* Consistent padding */
+    margin-bottom: 2%; /* Space between rows */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.12) 0%, rgba(1, 255, 252, 0.89) 49%);
+    transition: all 0.5s ease;
+    position: relative; /* For positioning the play icon */
+    cursor: pointer;
+}
+
+/* Playlist image */
+.playlist-image {
+    width: 100%; /* Full width for the image */
+    height: 60%; /* Proportional height */
+    border-radius: 15px;
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Playlist title */
+.playlist-title {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Playlist subtitle */
+.playlist-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    color: aqua;
+    margin: 0;
+}
+
+/* Play icon */
+.play-icon {
+    font-size: 24px; /* Icon size */
+    color: #0583a3; /* Icon color */
+    margin-top: 10px; /* Spacing above the icon */
+    background-color: #0583a3;
+}
+
+/* Fade effect for the play icon */
+.playlist-fade {
+    position: absolute;
+    right: 10px; /* Positioned near the right */
+    bottom: 10px; /* Positioned near the bottom */
+    opacity: 0; /* Hidden by default */
+    width: 30px; /* Icon container size */
+    height: 30px;
+    border-radius: 50%; /* Circular icon background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+/* Show the fade effect on hover */
+.playlist-card:hover .playlist-fade {
+    opacity: 1; /* Fade in on hover */
+}
